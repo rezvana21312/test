@@ -25,7 +25,32 @@ body {
 <td style="width: 184.667px; background-color: red;">&nbsp;</td>
 <td style="width: 184.667px;">&nbsp;</td>
 <td style="width: 185.333px; text-align: center;">
-<h1><strong>Hi</strong></h1>
+<h1><strong>
+  
+  <script>
+function naiveSearch(txt, pat){
+    var M = pat.length; 
+	var N = txt.length; 
+    for(var i = 0; i <= N-M; i++){
+        var j;
+    
+        for(var j = 0; j < M; j++){
+          if(txt[i+j] != pat[j])
+            break;
+            if(j == M ); document.writeln("Pattern found at index");
+            document.write("\n");
+            document.writeln(i);
+        }
+    }
+    
+}
+var txt="Hello world";
+var pat="lo";
+naiveSearch(txt, pat); //1
+
+</script>
+  
+  </strong></h1>
 </td>
 </tr>
 </tbody>
