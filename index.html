@@ -51,6 +51,7 @@ function naiveSearch(txt,pat){
     //var txt="Hello world";
     var txt=document.getElementById("id1").value;
     var pat=document.getElementById("id2").value;
+    document.write(txt);
     
     
     //document.write(txt);
@@ -64,10 +65,12 @@ function naiveSearch(txt,pat){
           if(txt[i+j] != pat[j])
             break;
             if(j == M ); 
-            document.write(txt);
+            
+	    document.write("\n");
             document.writeln("Pattern found at index");
             document.write("\n");
             document.write(i);
+	    document.write("\n");
             //alert(i);
         }
     }
