@@ -25,7 +25,10 @@ body {
 <td style="width: 184.667px; background-color: red;">
 	
 	<p>Enter an string and click OK:</p>
-        <input id="id1" >
+        txt  <input id="id1" >
+        <br><br>
+        
+        pat  <input id="id2" >
         <button onclick="naiveSearch()">OK</button>
 	
 	
@@ -40,10 +43,18 @@ body {
 <h1><strong>
   
   <script>
+
+naiveSearch(txt,pat); //1
 function naiveSearch(txt,pat){
-    //var pat = document.getElementById("id1");
-   // var pat ="lo";
+    //var pat = document.getElementById("id1").value;
+    //var pat ="lo";
     //var txt="Hello world";
+    var txt=document.getElementById("id1").value;
+    var pat=document.getElementById("id2").value;
+    
+    
+    //document.write(txt);
+    //document.write(pat);
     var M = pat.length; 
 	var N = txt.length; 
     for(var i = 0; i <= N-M; i++){
@@ -52,16 +63,18 @@ function naiveSearch(txt,pat){
         for(var j = 0; j < M; j++){
           if(txt[i+j] != pat[j])
             break;
-            if(j == M ); document.writeln("Pattern found at index");
+            if(j == M ); 
+            document.write(txt);
+            document.writeln("Pattern found at index");
             document.write("\n");
-            document.writeln(i);
+            document.write(i);
+            //alert(i);
         }
     }
     
 }
-var txt="Hello world";
-var pat="lo";
-naiveSearch(txt, pat); //1
+//var txt="Hello world";
+//var pat="lo";
 
 </script>
   
