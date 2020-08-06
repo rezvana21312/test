@@ -25,17 +25,24 @@ body {
 <td style="width: 184.667px; background-color: red;">
 	
 	<p>Enter an string and click OK:</p>
-        <input id="id1" type="number" min="100" max="300" required>
+        <input id="id1" >
         <button onclick="naiveSearch()">OK</button>
 	
 	
 	</td>
-<td style="width: 184.667px;">&nbsp;</td>
+<td style="width: 184.667px;">
+	
+	<p>I will search.</p>
+	
+	
+	</td>
 <td style="width: 185.333px; text-align: center;">
 <h1><strong>
   
   <script>
-function naiveSearch(txt, pat){
+function naiveSearch(){
+    var pat = document.getElementById("id1");
+    var txt="Hello world";
     var M = pat.length; 
 	var N = txt.length; 
     for(var i = 0; i <= N-M; i++){
@@ -51,9 +58,9 @@ function naiveSearch(txt, pat){
     }
     
 }
-var txt="Hello world";
-var pat="lo";
-naiveSearch(txt, pat); //1
+//var txt="Hello world";
+//var pat="lo";
+//naiveSearch(txt, pat); //1
 
 </script>
   
