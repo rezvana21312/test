@@ -40,10 +40,10 @@ body {
 <h1><strong>
   
   <script>
-function naiveSearch(){
+function naiveSearch(txt,pat){
     //var pat = document.getElementById("id1");
-    var pat ="lo";
-    var txt="Hello world";
+   // var pat ="lo";
+    //var txt="Hello world";
     var M = pat.length; 
 	var N = txt.length; 
     for(var i = 0; i <= N-M; i++){
@@ -59,9 +59,9 @@ function naiveSearch(){
     }
     
 }
-//var txt="Hello world";
-//var pat="lo";
-//naiveSearch(txt, pat); //1
+var txt="Hello world";
+var pat="lo";
+naiveSearch(txt, pat); //1
 
 </script>
   
